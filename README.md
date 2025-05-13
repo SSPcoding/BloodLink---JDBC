@@ -22,15 +22,11 @@ BloodLink is a web application developed using JSP and Servlet to bridge the gap
 
 ## Setup
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/your-username/bloodlink.git
-    ```
-2. Open the project in your preferred IDE.
-3. Set up your MySQL database.
-4. Configure your server (e.g., Apache Tomcat).
-5. Deploy the project on the server.
-6. Open your browser and navigate to `http://localhost:8080/blood-bucket`.
+1. Open the project in your preferred IDE.
+2. Set up your MySQL database.
+3. Configure your server (e.g., Apache Tomcat).
+4. Deploy the project on the server.
+5. Open your browser and navigate to `http://localhost:8080/blood-bucket`.
 
 ## How to Use
 
