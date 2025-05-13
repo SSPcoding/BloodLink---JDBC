@@ -26,7 +26,7 @@ BloodLink is a web application developed using JSP and Servlet to bridge the gap
 2. Set up your MySQL database.
 3. Configure your server (e.g., Apache Tomcat).
 4. Deploy the project on the server.
-5. Open your browser and navigate to `http://localhost:8080/blood-bucket`.
+5. Open your browser and navigate to `http://localhost:8080/blood-link`.
 
 ## How to Use
 
