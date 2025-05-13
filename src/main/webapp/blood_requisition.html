@@ -1,0 +1,214 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./blood_requisition.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lunasima&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper1">
+          <div class="formbold-mb-5">
+            <img
+              src="./images/blood_requisition_image.png"
+              alt=""
+            />
+            <h1>Blood Requisition Form</h1>
+          </div>
+        </div>
+      </div>
+      <div class="formbold-main-wrapper1">
+        <div class="formbold-form-wrapper">
+          <form method="post" action="./SeekServlet">
+            <div class="formbold-mb-5">
+              <label for="name" class="formbold-form-label">
+                Patient Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Full Name"
+                class="formbold-form-input"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="formbold-mb-5">
+              <label for="phone" class="formbold-form-label">
+                Phone Number
+              </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                class="formbold-form-input"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="formbold-mb-5">
+              <label for="email" class="formbold-form-label">
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+                class="formbold-form-input"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="formbold-mb-5">
+              <label for="name" class="formbold-form-label">
+                Hospital Name With Address
+              </label>
+              <textarea
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Enter your full address"
+                class="formbold-form-input"
+              ></textarea>
+            </div>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5 w-full">
+                  <label for="date" class="formbold-form-label"> Age </label>
+                  <input
+                    type="number"
+                    name="age"
+                    id="age"
+                    min="18"
+                    class="formbold-form-input"
+                  />
+                  <div class="error"></div>
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="blood_group" class="formbold-form-label"
+                    >Required Blood Group</label
+                  >
+                  <select
+                    id="blood_group"
+                    name="blood_group"
+                    class="formbold-form-input"
+                  >
+                    <option value="A Rh+">A Rh+</option>
+                    <option value="B Rh+">B Rh+</option>
+                    <option value="O Rh+">O Rh+</option>
+                    <option value="AB Rh+">AB Rh+</option>
+                    <option value="A Rh-">A Rh-</option>
+                    <option value="B Rh-">B Rh-</option>
+                    <option value="O Rh-">O Rh-</option>
+                    <option value="AB Rh-">AB Rh-</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="gender" class="formbold-form-label">Gender</label>
+                  <select id="gender" name="gender" class="formbold-form-input">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                  </select>
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="bloodunit" class="formbold-form-label"
+                    >Required Blood Unit</label
+                  >
+                  <select
+                    id="bloodunit"
+                    name="bloodunit"
+                    class="formbold-form-input"
+                  >
+                    <option value="Whole Blood">Whole Blood</option>
+                    <option value="Packed Cells">Packed Cells</option>
+                    <option value="FFP">FFP</option>
+                    <option value="Plasma">Plasma</option>
+                    <option value="Platelet conc">Platelet conc</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="formbold-mb-5 formbold-pt-3">
+              <label class="formbold-form-label formbold-form-label-2">
+                Health Security Check
+              </label>
+              <div class="formbold-mb-5">
+                <p>Does the patient have any of the following</p>
+                <input
+                  type="checkbox"
+                  id="disease1"
+                  name="disease"
+                  value="cardiac issues"
+                />
+                <label for="disease1">Cardiac Issues</label><br />
+                <input
+                  type="checkbox"
+                  id="disease2"
+                  name="disease"
+                  value="diabetes"
+                />
+                <label for="disease2">Pregnancy</label><br />
+                <input
+                  type="checkbox"
+                  id="disease3"
+                  name="disease"
+                  value="pregnancy"
+                />
+                <label for="disease3">Diabetes</label><br />
+                <input
+                  type="checkbox"
+                  id="disease4"
+                  name="disease"
+                  value="others"
+                />
+                <label for="disease4">Any other major disease</label><br />
+
+                <input
+                  type="checkbox"
+                  id="disease5"
+                  name="disease"
+                  value="none"
+                />
+                <label for="disease5">None</label><br />
+              </div>
+              <div class="formbold-mb-5">
+                <label for="name" class="formbold-form-label">
+                  <h4>Cause of blood requirement</h4>
+                </label>
+                <textarea
+                  type="text"
+                  name="cause"
+                  id="cause"
+                  placeholder="Enter Cause"
+                  class="formbold-form-input"
+                ></textarea>
+              </div>
+            </div>
+            <div class="final-submit">
+              <button class="formbold-btn" id="app" type="submit">
+                Submit
+              </button>
+              <button class="formbold-btn" id="app" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

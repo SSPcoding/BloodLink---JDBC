@@ -1,0 +1,176 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood donation form</title>
+    <link rel="stylesheet" href="./donate_form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lunasima&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper1">
+          <div class="formbold-mb-5">
+            <img
+              src="./images/flat-world-blood-donor-day-illustration_23-2148951414.jpg"
+              alt="icon"
+            />
+            <h1>Blood Donation Form</h1>
+          </div>
+        </div>
+      </div>
+      <div class="formbold-main-wrapper1">
+        <div class="formbold-form-wrapper">
+          <form method="post" action="./DonationServlet">
+            <div class="formbold-mb-5">
+              <label for="dname" class="formbold-form-label"> Full Name </label>
+              <input
+                type="text"
+                name="dname"
+                id="dname"
+                placeholder="Full Name"
+                class="formbold-form-input"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="formbold-mb-5">
+              <label for="dphone" class="formbold-form-label">
+                Phone Number
+              </label>
+              <input
+                type="text"
+                name="dphone"
+                id="dphone"
+                placeholder="Enter your phone number"
+                class="formbold-form-input"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="formbold-mb-5">
+              <label for="dmail" class="formbold-form-label">
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="dmail"
+                id="dmail"
+                placeholder="Enter your email"
+                class="formbold-form-input"
+              />
+              <div class="error"></div>
+            </div>
+            <div class="formbold-mb-5">
+              <label for="daddress" class="formbold-form-label">
+                Residential Address
+              </label>
+              <textarea
+                type="text"
+                name="daddress"
+                id="daddress"
+                placeholder="Enter your full address"
+                class="formbold-form-input"
+              ></textarea>
+            </div>
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5 w-full">
+                  <label for="dage" class="formbold-form-label"> Age </label>
+                  <input
+                    type="text"
+                    name="dage"
+                    id="dage"
+                    class="formbold-form-input"
+                  />
+                  <div class="error"></div>
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="dblood_group" class="formbold-form-label"
+                    >Blood Group</label
+                  >
+                  <select
+                    id="dblood_group"
+                    name="dblood_group"
+                    class="formbold-form-input"
+                  >
+                    <option value="A Rh+">A Rh+</option>
+                    <option value="B Rh+">B Rh+</option>
+                    <option value="O Rh+">O Rh+</option>
+                    <option value="AB Rh+">AB Rh+</option>
+                    <option value="A Rh-">A Rh-</option>
+                    <option value="B Rh-">B Rh-</option>
+                    <option value="O Rh-">O Rh-</option>
+                    <option value="AB Rh-">AB Rh-</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="formbold-mb-5 formbold-pt-3">
+              <label class="formbold-form-label formbold-form-label-2">
+                Health Security Check
+              </label>
+              <div class="formbold-mb-5">
+                <p>
+                  Do you suffer from or have suffered from any of these
+                  diseases?
+                </p>
+                <input
+                  type="checkbox"
+                  id="disease1"
+                  name="diseases"
+                  value="heart"
+                />
+                <label for="disease1"> Heart</label><br />
+                <input
+                  type="checkbox"
+                  id="disease2"
+                  name="diseases"
+                  value="diabities"
+                />
+                <label for="disease2">Diabities</label><br />
+                <input
+                  type="checkbox"
+                  id="disease3"
+                  name="diseases"
+                  value="others"
+                />
+                <label for="disease3">Any other major disease</label><br />
+                <input
+                  type="checkbox"
+                  id="disease4"
+                  name="diseases"
+                  value="none"
+                />
+                <label for="disease4">None</label><br />
+              </div>
+              <div class="formbold-mb-5">
+                <label for="dsymptoms" class="formbold-form-label">
+                  <h4>Symptoms</h4>
+                </label>
+                <textarea
+                  type="text"
+                  name="dsymptoms"
+                  id="dsymptoms"
+                  placeholder="Enter your symptoms"
+                  class="formbold-form-input"
+                ></textarea>
+              </div>
+            </div>
+            <div class="final-submit">
+              <input class="formbold-btn" type="submit" value="SUBMIT" />
+ 			<input class="formbold-btn" type="reset" value="CLEAR" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
